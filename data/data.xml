@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Shema_xml.xsd">
+    <Agents>
+        <Agent_S IdUser="Ag01" dept="info">
+            <CIN>C555</CIN>
+            <Nom>Fatimaa</Nom>
+            <Prenom>Hajouri</Prenom>
+            <Phone>06457812</Phone>
+            <Email>f.hajouri@gmail.com</Email>
+            <Login>aaaa</Login>
+            <MotPass>aaaa</MotPass>
+            <Active>1</Active>
+        </Agent_S>
+        <Agent_S IdUser="Ag02" dept="indu">
+            <CIN>C555</CIN>
+            <Nom>halima</Nom>
+            <Prenom>Hajouri</Prenom>
+            <Phone>06457812</Phone>
+            <Email>h.hajouri@gmail.com</Email>
+            <Login>nnnn</Login>
+            <MotPass>nnnn</MotPass>
+            <Active>1</Active>
+        </Agent_S>
+    </Agents>
+    <Admins>
+        <Admin IdUser="A12">
+            <CIN>C9845</CIN>
+            <Nom>admin1</Nom>
+            <Prenom>admin1</Prenom>
+            <Login>aaaa</Login>
+            <MotPass>aaaa</MotPass>
+
+        </Admin>
+    </Admins>
+    <Enseignants>
+        <Enseignant IdUser="En01" Sexe="Masculin" dept="info">
+            <CIN>C98</CIN>
+            <Nom>Aliouii</Nom>
+            <Prenom>Hamza</Prenom>
+            <Phone>06457812</Phone>
+            <Email>hamza@gmail.com</Email>
+            <Specialite>Web</Specialite>
+            <Login>Alioui</Login>
+            <MotPass>Alioui</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En02" Sexe="Masculin" dept="info">
+            <CIN>D1452</CIN>
+            <Nom>Bayyar</Nom>
+            <Prenom>Mohamed</Prenom>
+            <Phone>06457812</Phone>
+            <Email>abdou.bayar@gmail.com</Email>
+            <Specialite>Web</Specialite>
+            <Login>Bayyar</Login>
+            <MotPass>123</MotPass>
+            <Active>0</Active>
+        </Enseignant>
+
+
+        <Enseignant IdUser="C04" Sexe="fiminin" dept="info">
+            <CIN>K444578</CIN>
+            <Nom>Archid</Nom>
+            <Prenom>Khadija</Prenom>
+            <Phone>06457812</Phone>
+            <Email>khadija.archid@gmail.com</Email>
+            <Specialite>Base de Donnes</Specialite>
+            <Login>Archid</Login>
+            <MotPass>aaaa</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+
+
+        <Enseignant IdUser="En06" Sexe="Masculin" dept="info">
+            <CIN>C10845</CIN>
+            <Nom>TROUKI</Nom>
+            <Prenom>Reda</Prenom>
+            <Phone>0615</Phone>
+            <Email>Reda@gmail.com</Email>
+            <Specialite>Web</Specialite>
+            <Login>Reda</Login>
+            <MotPass>2Z3E4R</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En07" Sexe="Feminin" dept="indu">
+            <CIN>C10849</CIN>
+            <Nom>RRR</Nom>
+            <Prenom>TTT</Prenom>
+            <Phone>0613</Phone>
+            <Email>RR@gmail.com</Email>
+            <Specialite>Mobile</Specialite>
+            <Login>RRR.TT</Login>
+            <MotPass>2Z3E4k</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="C09" Sexe="Masculin" dept="indu">
+            <CIN>F114578</CIN>
+            <Nom>BBBB</Nom>
+            <Prenom>JJJ</Prenom>
+            <Phone>06457</Phone>
+            <Email>JJ@gmail.com</Email>
+            <Specialite>Big Data</Specialite>
+            <Login>BBBB</Login>
+            <MotPass>llll</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En011" Sexe="Feminin" dept="info">
+            <CIN>C10848</CIN>
+            <Nom>TANTOUNI</Nom>
+            <Prenom>Mohamed</Prenom>
+            <Phone>061577</Phone>
+            <Email>Mohamed@gmail.com</Email>
+            <Specialite>JEE</Specialite>
+            <Login>Mohamed</Login>
+            <MotPass>3Z3E4R</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En017" Sexe="Feminin" dept="indu">
+            <CIN>C10849</CIN>
+            <Nom>HHHH</Nom>
+            <Prenom>TTT</Prenom>
+            <Phone>061309</Phone>
+            <Email>hhh@gmail.com</Email>
+            <Specialite>Mobile</Specialite>
+            <Login>hhh.TT</Login>
+            <MotPass>2k3E4k</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En013" Sexe="Feminin" dept="info">
+            <CIN>C98498</CIN>
+            <Nom>Mounir</Nom>
+            <Prenom>Ilhame</Prenom>
+            <Phone>06457813</Phone>
+            <Email>i.mounir@gmail.com</Email>
+            <Specialite>AI</Specialite>
+            <Login>i.mounir</Login>
+            <MotPass>123456</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En20" Sexe="Masculin" dept="info">
+            <CIN>D1452</CIN>
+            <Nom>LLLL</Nom>
+            <Prenom>Mohamed</Prenom>
+            <Phone>06457822</Phone>
+            <Email>L.Moha@gmail.com</Email>
+            <Specialite>Anglais</Specialite>
+            <Login>m.lll</Login>
+            <MotPass>12378</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+
+
+        <Enseignant IdUser="En63af4b55110e6" Sexe="Masculin" dept="indu">
+            <CIN>HH356732</CIN>
+            <Nom>Reda</Nom>
+            <Prenom>Rahim</Prenom>
+            <Phone>064455</Phone>
+            <Email>reda.rahim@gmail.com</Email>
+            <Specialite>Mobile</Specialite>
+            <Login>reda.rahim</Login>
+            <MotPass>12345</MotPass>
+            <Active>1</Active>
+        </Enseignant>
+        <Enseignant IdUser="En63c9368b6a8a0" Sexe="Masculin" dept="indu">
+            <CIN>JJJ142</CIN>
+            <Nom>JJJJ</Nom>
+            <Prenom>LLL</Prenom>
+            <Phone>647374</Phone>
+            <Email>TTT@yyy.com</Email>
+            <Specialite>php</Specialite>
+            <Login>moha</Login>
+            <MotPass>1234</MotPass>
+        </Enseignant>
+    </Enseignants>
+    <Etudiants>
+        <Etudiant IdUser="E123" Sexe="Masculin" Filiere="GI">
+            <CIN>C98</CIN>
+            <Nom>Aliouii</Nom>
+            <Prenom>Hamza</Prenom>
+            <Phone Type="Portable">06457812</Phone>
+            <Email Type="Academique">hamza@gmail.com</Email>
+            <Login>Alioui</Login>
+            <MotPass>Alioui</MotPass>
+            <Active>1</Active>
+        </Etudiant>
+        <Etudiant IdUser="C142" Sexe="Masculin" Filiere="GI">
+            <CIN>M14578</CIN>
+            <Nom>Hajii</Nom>
+            <Prenom>Yassin</Prenom>
+            <Phone Type="Portable">06457812</Phone>
+            <Email Type="Academique">hajji@gmail.com</Email>
+            <Login>Haji</Login>
+            <MotPass>Haji</MotPass>
+            <Active>1</Active>
+        </Etudiant>
+    </Etudiants>
+    <Matieres>
+
+        <Matiere CodeMatiere="M9" Enseignant="C04" dept="indu" Filiere="GIM">
+            <Intitule>Merise</Intitule>
+            <Coeffecient>0.6</Coeffecient>
+        </Matiere>
+        <Matiere CodeMatiere="Mtr63af5e7c3a1eb" dept="info" Filiere="GI" Enseignant="En01">
+            <Intitule>Anglais</Intitule>
+            <Coeffecient>0.6</Coeffecient>
+        </Matiere>
+        <Matiere CodeMatiere="Mtr63af7b1e17db2" dept="info" Filiere="GI" Enseignant="En01">
+            <Intitule>Java</Intitule>
+            <Coeffecient>1</Coeffecient>
+        </Matiere>
+
+    </Matieres>
+    <Seances>
+        <Seance IdSeance="S1" Enseignant="En01" Matiere="Mtr63af7b1e17db2">
+            <DateS>15-12-2022</DateS>
+            <HeureDebut>13:30:00</HeureDebut>
+            <HeureFin>15:30:00</HeureFin>
+            <TypeS>cours</TypeS>
+        </Seance>
+        <Seance IdSeance="S2" Enseignant="C04" Matiere="M9">
+            <DateS>15-12-2022</DateS>
+            <HeureDebut>13:30:00</HeureDebut>
+            <HeureFin>15:30:00</HeureFin>
+            <TypeS>Tp</TypeS>
+        </Seance>
+
+        
+        <Seance IdSeance="S63af80178131a" Enseignant="C04" Matiere="Mtr63af7b1e17db2">
+            <DateS>2022-12-31</DateS>
+            <HeureDebut>08:30:00</HeureDebut>
+            <HeureFin>12:30:00</HeureFin>
+            <TypeS>TP</TypeS>
+        </Seance>
+    </Seances>
+    <Absences>
+
+        <Absence IdAbsence="AB63acd9ba68a35" Etudiant="C142" Seance="S2">
+            <Justifier>0</Justifier>
+            <Comm_abs/>
+        </Absence>
+
+        <Absence IdAbsence="AB63ae021c9a99f" Etudiant="C142" Seance="S1">
+            <Justifier>1</Justifier>
+            <Comm_abs>Retard</Comm_abs>
+        </Absence>
+        <Absence IdAbsence="AB63af802337c0b" Etudiant="E123" Seance="S63af80178131a">
+            <Justifier>1</Justifier>
+            <Comm_abs>Retard</Comm_abs>
+        </Absence>
+
+        <Absence IdAbsence="AB63c9372a0fe12" Etudiant="E123" Seance="S1">
+            <Justifier>1</Justifier>
+            <Comm_abs>malade</Comm_abs>
+        </Absence>
+    </Absences>
+    <Filieres>
+        <Filiere nom="GI" Coordonateur="En02" dept="info"/>
+        <Filiere nom="GIM" Coordonateur="C05" dept="indu"/>
+        <Filiere nom="II" Coordonateur="C04" dept="indu"/>
+    </Filieres>
+    <Depts>
+        <Dept idDept="info" nom="Informatique" ChefDept="En01"/>
+        <Dept idDept="indu" nom="Industriele" ChefDept="C04"/>
+    </Depts>
+</EST>

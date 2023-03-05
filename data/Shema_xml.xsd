@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="EST">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Agents">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Agent_S">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CIN" type="xs:string"/>
+                                        <xs:element name="Nom" type="xs:string"/>
+                                        <xs:element name="Prenom" type="xs:string"/>
+                                        <xs:element name="Phone" type="xs:unsignedInt"/>
+                                        <xs:element name="Email" type="xs:string"/>
+                                        <xs:element name="Login" type="xs:string"/>
+                                        <xs:element name="MotPass" type="xs:string"/>
+                                        <xs:element name="Active" type="xs:unsignedByte"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IdUser" type="xs:ID" use="required"/>
+                                    <xs:attribute name="dept" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Admins">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Admin">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CIN" type="xs:string"/>
+                                        <xs:element name="Nom" type="xs:string"/>
+                                        <xs:element name="Prenom" type="xs:string"/>
+                                        <xs:element name="Login" type="xs:string"/>
+                                        <xs:element name="MotPass" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IdUser" type="xs:ID" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Enseignants">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Enseignant">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CIN" type="xs:string"/>
+                                        <xs:element name="Nom" type="xs:string"/>
+                                        <xs:element name="Prenom" type="xs:string"/>
+                                        <xs:element name="Phone" type="xs:unsignedInt"/>
+                                        <xs:element name="Email" type="xs:string"/>
+                                        <xs:element name="Specialite" type="xs:string"/>
+                                        <xs:element name="Login" type="xs:string"/>
+                                        <xs:element name="MotPass" type="xs:string"/>
+                                        <xs:element name="Active" type="xs:unsignedByte"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IdUser" type="xs:ID" use="required"/>
+                                    <xs:attribute name="Sexe" type="xs:string" use="required"/>
+                                    <xs:attribute name="dept" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Etudiants">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Etudiant">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="CIN" type="xs:string"/>
+                                        <xs:element name="Nom" type="xs:string"/>
+                                        <xs:element name="Prenom" type="xs:string"/>
+                                        <xs:element name="Phone">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:unsignedInt">
+                                                        <xs:attribute name="Type" type="xs:string" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Email">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="Type" type="xs:string" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="Login" type="xs:string"/>
+                                        <xs:element name="MotPass" type="xs:string"/>
+                                        <xs:element name="Active" type="xs:unsignedByte"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IdUser" type="xs:ID" use="required"/>
+                                    <xs:attribute name="Sexe" type="xs:string" use="required"/>
+                                    <xs:attribute name="Filiere" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Matieres">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Matiere">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Intitule" type="xs:string"/>
+                                        <xs:element name="Coeffecient" type="xs:decimal"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="CodeMatiere" type="xs:ID" use="required"/>
+                                    <xs:attribute name="Enseignant" type="xs:IDREF" use="required"/>
+                                    <xs:attribute name="dept" type="xs:IDREF" use="required"/>
+                                    <xs:attribute name="Filiere" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Seances">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Seance">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DateS" type="xs:string"/>
+                                        <xs:element name="HeureDebut" type="xs:time"/>
+                                        <xs:element name="HeureFin" type="xs:time"/>
+                                        <xs:element name="TypeS" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IdSeance" type="xs:ID" use="required"/>
+                                    <xs:attribute name="Enseignant" type="xs:IDREF" use="required"/>
+                                    <xs:attribute name="Matiere" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Absences">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Absence">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Justifier" type="xs:unsignedByte"/>
+                                        <xs:element name="Comm_abs" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="IdAbsence" type="xs:ID" use="required"/>
+                                    <xs:attribute name="Etudiant" type="xs:IDREF" use="required"/>
+                                    <xs:attribute name="Seance" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Filieres">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Filiere">
+                                <xs:complexType>
+                                    <xs:attribute name="nom" type="xs:ID" use="required"/>
+                                    <xs:attribute name="Coordonateur" type="xs:string" use="required"/>
+                                    <xs:attribute name="dept" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Depts">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Dept">
+                                <xs:complexType>
+                                    <xs:attribute name="idDept" type="xs:ID" use="required"/>
+                                    <xs:attribute name="nom" type="xs:string" use="required"/>
+                                    <xs:attribute name="ChefDept" type="xs:IDREF" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

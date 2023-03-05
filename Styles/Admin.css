@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+:root {
+    --input-border: #8b8a8b;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+}
+* {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.nav-form {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px;
+}
+input[type="submit"] {
+    width: 10%;
+    height: 40px;
+    font-weight: bold;
+    background-color: #00c6cf;
+    color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #0f8189;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+.header-info {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    margin-top: 20px;
+    border-bottom: 2px solid grey;
+}
+.header-info h1 {
+    font-size: 2.2rem;
+}
+.logout {
+    background-color: #008288;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+.logout a:hover,
+.logout:hover {
+    background-color: #cbe8ec;
+    color: black;
+}
+.cour {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.cour img {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+/************* Agent Style********************/
+.Form-ModifAbs {
+    display: block;
+    margin-left: 30%;
+    width: 45%;
+    padding: 10px;
+}
+.Form-ModifAbs input[type="submit"],
+.Form-ModifAbs input[type="date"],
+.Form-ModifAbs input[type="time"],
+.Form-ModifAbs input[type="text"],
+.Form-ModifAbs input[type="email"],
+.Form-ModifAbs input[type="number"],
+.Form-ModifAbs select {
+    width: 90%;
+    height: 60px;
+    margin: 10px;
+}
+.Ajouter {
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 3px 2px 9px -3px rgba(18, 17, 17, 0.75);
+    -webkit-box-shadow: 3px 2px 9px -3px rgba(18, 17, 17, 0.75);
+    -moz-box-shadow: 3px 2px 9px -3px rgba(18, 17, 17, 0.75);
+}
+.Ajouter:hover {
+    color: white;
+    background-color: #008288;
+}
+.nav-option {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-option li {
+    background-color: #dadde2;
+    width: 15%;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 4px 0px rgba(18, 17, 17, 0.75);
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(18, 17, 17, 0.75);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(18, 17, 17, 0.75);
+}
+.nav-option li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.form-container {
+    width: 70%;
+    display: grid;
+    place-items: center;
+}
+.input {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+}
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
